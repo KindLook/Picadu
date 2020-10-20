@@ -1,3 +1,10 @@
+@mixin flex()
+  display: flex
+  justify-content: center
+  flex-wrap: wrap
+  align-items: center
+
+
 *
   margin: 0
   padding: 0
@@ -36,10 +43,76 @@ ul
   background-color: #FA8C16
   padding-top: 16px
   padding-bottom: 16px
+
   &__wrapper
-    border: 1px solid #000
-    max-width: 1200px //максимальная ширина
-    width: 90%    //если меньше поле то 90%
+    max-width: 1200px
+    //максимальная ширина
+    width: 90%
+    //если меньше поле то 90%
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+  &__header-nav
+    margin-left: 60px
+    margin-right: auto
+
+  &-menu
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+  &-menu__link
+    color: #fafafa
+    margin-right: 15px
+    font-size: 14px
+    line-height: 22px
+
+  &__input-group
+    position: relative
+    border-radius: 4px
+    background: #FFFFFF
+    border: 1px solid #D9D9D9
+    overflow: hidden
+    //чтобы за предел блока ничего не вываливалось
+    width: 237px
+    height: 32px
+
+.search
+  &__input
+    border: none
+    width: 80%
+    height: 100%
+    font-size: 14px
+    line-height: 22px
+
+  &__button
+    border: none
+    height: 100%
+    width: 20%
+    position: absolute
+    right: 0
+    top: 0
+    background: #FFFFFF
+    cursor: pointer
+    @include flex
+
+  &__input[type="search"]::-moz-placeholder
+    color: #BFBFBF
+
+  &__input[type="search"]::-webkit-input-placeholder
+    color: #BFBFBF
+
+  &__input[type="search"]:-ms-input-placeholder
+    color: #BFBFBF
+
+  &__input[type="search"]::-ms-input-placeholder
+    color: #BFBFBF
+
+  &__input[type="search"]::placeholder
+    color: #BFBFBF
+
+
 
 
 //
