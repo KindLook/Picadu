@@ -99,7 +99,8 @@ ul {
   max-width: 800px; }
   .posts__post {
     background: #FFFFFF;
-    border: 1px solid #E8E8E8; }
+    border: 1px solid #E8E8E8;
+    margin-bottom: 30px; }
   .posts__body {
     padding: 35px 35px 0 35px; }
   .posts__title {
@@ -162,5 +163,8 @@ ul {
   .posts__avatar {
     margin-left: 10px;
     border-radius: 4px; }
+
+.icon-likes, .icon-comments {
+  margin-right: 6px; }
 
 /*# sourceMappingURL=style.css.map */
