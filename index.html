@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Picabu</title>
-<!--    подключил шрифты-->
+    <!--    подключил шрифты-->
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/assets/style.css">
 </head>
@@ -30,7 +30,73 @@
     </div>
 </header>
 
+<div class="content">
+    <main class="posts">
+        <section class="post">
+            <h2 class="post__title">Заголовок поста</h2>
+            <p class="post__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque beatae dolorem ea
+                eaque, enim ex exercitationem illum iure laboriosam minus nisi odit officiis, perspiciatis possimus
+                provident quibusdam tempora. Cupiditate dolore dolores, eius iste, modi obcaecati placeat praesentium
+                rerum saepe totam voluptate voluptatum! Accusamus architecto asperiores atque consequuntur dolor dolore
+                dolorum eius eligendi fuga id impedit in incidunt labore laborum minima minus molestiae necessitatibus
+                nesciunt, nobis placeat possimus quod ratione similique tempora ullam. Aperiam assumenda, culpa dicta
+                dolor dolorum fugit illo mollitia nam nesciunt nisi nobis quia, quisquam quo repellendus repudiandae,
+                tempora ullam. Accusamus, consequuntur delectus deleniti dolore laboriosam necessitatibus obcaecati quos
+                rerum tempore voluptate. Aliquam hic ipsum magnam mollitia officiis perspiciatis repellendus. Accusamus
+                alias animi at consequatur, dolore doloremque doloribus eos ex, maxime odit porro praesentium quam quia
+                rem, sed sequi suscipit! A accusamus adipisci assumenda atque consequuntur culpa dolorum ea earum
+                exercitationem expedita explicabo fuga fugiat, incidunt iure libero magni modi molestias mollitia nulla
+                odit praesentium quae quas qui repellendus repudiandae sed sit soluta sunt suscipit temporibus ullam
+                vero voluptatibus voluptatum? Animi consequuntur cum delectus dolorum eaque eius error fugiat labore
+                libero nemo neque nesciunt, obcaecati officiis provident quia repellendus rerum saepe sapiente sunt,
+                suscipit tempore unde veniam voluptas.
+            </p>
+            <div class="post__tags">
+                <span class="tags">#свежее</span>
+                <span class="tags">#новое</span>
+                <span class="tags">#горячее</span>
+                <span class="tags">#мое</span>
+                <span class="tags">#случайность</span>
+            </div>
+        </section>
+        <div class="post__footer">
+            <div class="post__buttons">
+                <button class="post__likes">
+                    <svg class="icon">
+                        <use xlink:href="img/icon/icons.svg#likes"></use>
+                    </svg>
+                    <span class="post__likes_counter">26</span>
+                </button>
 
+                <button class="post__comments">
+                    <svg class="icon">
+                        <use xlink:href="img/icon/icons.svg#comments"></use>
+                    </svg>
+                    <span class="post__comments_counter">157</span>
+                </button>
+
+                <button class="post__save">
+                    <svg class="icon">
+                        <use xlink:href="img/icon/icons.svg#save"></use>
+                    </svg>
+                </button>
+
+                <button class="post__share">
+                    <svg class="icon">
+                        <use xlink:href="img/icon/icons.svg#share"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="post-author"></div>
+
+        </div>
+    </main>
+    <!-- /.posts -->
+    <aside class="sidebar">
+
+    </aside>
+    <!-- /.sidebar -->
+</div>
 
 <script src="src/main.js"></script>
 </body>
