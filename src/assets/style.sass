@@ -1,7 +1,6 @@
 @mixin flex()
   display: flex
   justify-content: center
-  flex-wrap: wrap
   align-items: center
 
 
@@ -117,35 +116,51 @@ ul
 
 .posts
   max-width: 800px
+
   &__post
     background: #FFFFFF
+    border: 1px solid #E8E8E8
+
+  &__body
     padding: 35px 35px 0 35px
+
   &__title
     margin-bottom: 19px
     font-weight: 600
     font-size: 16px
     line-height: 24px
     color: #262626
+
   &__text
     font-size: 14px
     line-height: 22px
     color: #262626
+
   &__tags
     margin-bottom: 22px
+
   &__tag
     font-size: 14px
     line-height: 22px
     color: #BFBFBF
     margin-right: 10px
+
   &__footer
     background: #FAFAFA
-    border: 1px solid #E8E8E8
+    border-top: 1px solid #E8E8E8
+    @include flex
+    justify-content: space-between
+    padding-top: 13px
+    padding-bottom: 13px
+
   &__buttonsBlock
     display: flex
     align-items: center
-    margin: 21px auto 21px 36px
+    margin: 0 auto 0 36px
+
   &__button .icon
     fill: #8C8C8C
+
   &__button
     background-color: transparent
     border: none
@@ -156,8 +171,26 @@ ul
     align-items: center
     margin-right: 29px
 
+  &__author
+    @include flex
+    text-align: right
+    margin-right: 36px
 
+  &__username
+    display: block
+    font-size: 12px
+    line-height: 20px
+    text-align: right
+    color: #8C8C8C
 
+  &__post-time
+    font-size: 12px
+    line-height: 20px
+    color: #BFBFBF
+
+  &__avatar
+    margin-left: 10px
+    border-radius: 4px
 
 
 //

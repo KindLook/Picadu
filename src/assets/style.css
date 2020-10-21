@@ -83,7 +83,6 @@ ul {
   cursor: pointer;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   align-items: center; }
 .search__input[type="search"]::-moz-placeholder {
   color: #BFBFBF; }
@@ -100,6 +99,8 @@ ul {
   max-width: 800px; }
   .posts__post {
     background: #FFFFFF;
+    border: 1px solid #E8E8E8; }
+  .posts__body {
     padding: 35px 35px 0 35px; }
   .posts__title {
     margin-bottom: 19px;
@@ -120,11 +121,17 @@ ul {
     margin-right: 10px; }
   .posts__footer {
     background: #FAFAFA;
-    border: 1px solid #E8E8E8; }
+    border-top: 1px solid #E8E8E8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 13px;
+    padding-bottom: 13px; }
   .posts__buttonsBlock {
     display: flex;
     align-items: center;
-    margin: 21px auto 21px 36px; }
+    margin: 0 auto 0 36px; }
   .posts__button .icon {
     fill: #8C8C8C; }
   .posts__button {
@@ -136,5 +143,24 @@ ul {
     display: flex;
     align-items: center;
     margin-right: 29px; }
+  .posts__author {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    margin-right: 36px; }
+  .posts__username {
+    display: block;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: right;
+    color: #8C8C8C; }
+  .posts__post-time {
+    font-size: 12px;
+    line-height: 20px;
+    color: #BFBFBF; }
+  .posts__avatar {
+    margin-left: 10px;
+    border-radius: 4px; }
 
 /*# sourceMappingURL=style.css.map */
