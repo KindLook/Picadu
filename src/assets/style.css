@@ -121,7 +121,20 @@ ul {
   .posts__footer {
     background: #FAFAFA;
     border: 1px solid #E8E8E8; }
-  .posts__footer .icon {
+  .posts__buttonsBlock {
+    display: flex;
+    align-items: center;
+    margin: 21px auto 21px 36px; }
+  .posts__button .icon {
     fill: #8C8C8C; }
+  .posts__button {
+    background-color: transparent;
+    border: none;
+    color: #8C8C8C;
+    font-size: 14px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    margin-right: 29px; }
 
 /*# sourceMappingURL=style.css.map */
