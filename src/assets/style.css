@@ -190,6 +190,22 @@ ul {
   .sidebar-link:active {
     background-color: #FFFBE6;
     border-right: 3px solid #FAAD14; }
+  .sidebar-button {
+    background: #FAAD14;
+    border-radius: 4px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 0 13px;
+    margin-top: 20px; }
+  .sidebar-button__icon {
+    margin-right: 10px;
+    fill: #FFFFFF; }
+  .sidebar-button__text {
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 24px; }
 
 .user {
   background-color: #FAFAFA;
