@@ -270,6 +270,7 @@ ul {
   .user-exit {
     fill: #000;
     border: none;
-    background-color: inherit; }
+    background-color: inherit;
+    cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */
