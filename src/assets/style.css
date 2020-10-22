@@ -172,8 +172,24 @@ ul {
   margin-right: 6px; }
 
 .sidebar {
-  border: 1px solid;
   width: 31%; }
+  .sidebar-nav {
+    background: #FFFFFF;
+    border: 1px solid #E8E8E8;
+    border-top: none; }
+  .sidebar-link {
+    font-size: 14px;
+    line-height: 22px;
+    color: #595959;
+    padding: 16px 48px;
+    display: inline-block;
+    width: 72%; }
+  .sidebar-link:hover {
+    background-color: #FFFBE6;
+    color: #FAAD14; }
+  .sidebar-link:active {
+    background-color: #FFFBE6;
+    border-right: 3px solid #FAAD14; }
 
 .user {
   background-color: #FAFAFA;

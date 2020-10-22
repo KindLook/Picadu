@@ -202,8 +202,27 @@ ul
   margin-right: 6px
 
 .sidebar
-  border: 1px solid
   width: 31%
+
+  &-nav
+    background: #FFFFFF
+    border: 1px solid #E8E8E8
+    border-top: none
+
+  &-link
+    font-size: 14px
+    line-height: 22px
+    color: #595959
+    padding: 16px 48px
+    display: inline-block
+    width: 72%
+  &-link:hover
+    background-color: #FFFBE6
+    color: #FAAD14
+  &-link:active
+    background-color: #FFFBE6
+    border-right: 3px solid #FAAD14
+
 
 .user
   background-color: #FAFAFA
@@ -212,30 +231,25 @@ ul
   display: flex
   align-items: center
   justify-content: space-between
+
   &-avatar
     border-radius: 50%
+
   &-info
     display: flex
     align-items: center
+
   &-name
     font-weight: 600
     font-size: 16px
     line-height: 24px
     color: #595959
     margin-left: 17px
+
   &-exit
     fill: #000
     border: none
     background-color: inherit
-
-
-
-
-
-
-
-
-
 
 
 //
