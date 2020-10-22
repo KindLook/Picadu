@@ -216,12 +216,15 @@ ul
     padding: 16px 48px
     display: inline-block
     width: 72%
+
   &-link:hover
     background-color: #FFFBE6
     color: #FAAD14
+
   &-link:active
     background-color: #FFFBE6
     border-right: 3px solid #FAAD14
+
   &-button
     background: #FAAD14
     border-radius: 4px
@@ -233,11 +236,57 @@ ul
   &-button__icon
     margin-right: 10px
     fill: #FFFFFF
+
   &-button__text
     color: #FFFFFF
     font-size: 16px
     line-height: 24px
 
+  &-card
+    background: #FFFFFF
+    border: 1px solid #E8E8E8
+    margin-top: 20px
+
+  &-card__header
+    background: #FAFAFA
+    border-bottom: 1px solid #E8E8E8
+    padding: 23px 25px
+    font-weight: 600
+    font-size: 16px
+    line-height: 24px
+    color: #595959
+
+  &-card__body
+    padding: 22px 40px 30px 25px
+
+  &-card__body-title
+    font-weight: 600
+    font-size: 16px
+    line-height: 24px
+    color: #D48806
+
+  &-card__body-text
+    font-size: 14px
+    line-height: 22px
+    color: #262626
+    padding-top: 10px
+  &-promo
+    display: block
+    width: 100%
+    background: #fff url(img/promo.jpg) no-repeat center / cover
+    height: 260px
+    border: 1px solid #E8E8E8
+    margin-top: 20px
+    position: relative
+  &-promo::before
+    content: "Реклама"
+    position: absolute
+    right: 0
+    top: 0
+    background: #c4c4c4
+    padding: 0 26px
+    text-align: center
+    color: #FFF
 
 
 .user
