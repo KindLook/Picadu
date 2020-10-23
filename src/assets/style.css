@@ -35,7 +35,7 @@ ul {
   list-style-type: none; }
 
 .center {
-  padding: 0 calc(50% - 570px); }
+  padding: 0 calc(50% - 600px); }
 
 .header {
   background-color: #FA8C16;
@@ -272,5 +272,21 @@ ul {
     border: none;
     background-color: inherit;
     cursor: pointer; }
+
+@media (max-width: 1024px) {
+  .center {
+    padding: 0 calc(50% - 470px); }
+
+  .sidebar {
+    display: none; }
+
+  .posts {
+    max-width: 100%; } }
+@media (max-width: 768px) {
+  .center {
+    padding: 0 calc(50% - 400px); } }
+@media (max-width: 320px) {
+  .center {
+    padding: 0 calc(50% - 150px); } }
 
 /*# sourceMappingURL=style.css.map */
