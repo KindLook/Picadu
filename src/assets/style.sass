@@ -10,7 +10,8 @@
 
 .content
   max-width: 1200px
-  margin: 0 auto
+  margin: auto
+  width: 90%
   display: flex
   align-items: flex-start
   justify-content: space-between
@@ -40,8 +41,13 @@ nav ul li
 ul
   list-style-type: none
 
-.center
-  padding: 0 calc(50% - 600px)
+//.center
+//  padding: 0 calc(50% - 600px)
+//  //@media (max-width: 1270px)
+//  //    padding: 0 calc(50% - 500px)
+//  @media (max-width: 960px)
+//    padding: 0 calc(50% - 470px)
+
 
 .header
   background-color: #FA8C16
@@ -53,9 +59,11 @@ ul
   &__wrapper
     max-width: 1200px
     //максимальная ширина
+    width: 90%
     display: flex
     justify-content: space-between
     align-items: center
+    margin: auto
 
   &__header-nav
     margin-left: 60px
@@ -81,6 +89,9 @@ ul
     //чтобы за предел блока ничего не вываливалось
     width: 237px
     height: 32px
+
+.menu-toggle
+  display: none
 
 .search
   &__input
@@ -203,7 +214,6 @@ ul
 
 .sidebar
   width: 31%
-
   &-nav
     background: #FFFFFF
     border: 1px solid #E8E8E8
@@ -270,6 +280,7 @@ ul
     line-height: 22px
     color: #262626
     padding-top: 10px
+
   &-promo
     display: block
     width: 100%
@@ -278,6 +289,7 @@ ul
     border: 1px solid #E8E8E8
     margin-top: 20px
     position: relative
+
   &-promo::before
     content: "Реклама"
     position: absolute
@@ -317,21 +329,24 @@ ul
     background-color: inherit
     cursor: pointer
 
-@media (max-width: 1024px)
-  .center
-    padding: 0 calc(50% - 470px)
+
+@media (max-width: 990px)
   .sidebar
     display: none
   .posts
     max-width: 100%
+  .menu-toggle
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    margin-left: 12px
+    width: 30px
+    height: 20px
+  .menu-toggle span
+    height: 2px
+    width: 100%
+    background-color: #fff
 
-@media (max-width: 768px)
-  .center
-    padding: 0 calc(50% - 400px)
-
-@media (max-width: 320px)
-  .center
-    padding: 0 calc(50% - 150px)
 
 //@import "checkout"
 //@import "shoppingCart"
