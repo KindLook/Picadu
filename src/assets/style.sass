@@ -56,6 +56,7 @@ ul
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15)
   margin-bottom: 30px
 
+
   &__wrapper
     max-width: 1200px
     //максимальная ширина
@@ -213,18 +214,6 @@ ul
   margin-right: 6px
 
 .sidebar
-  position: fixed
-  top: 64px
-  right: 0
-  bottom: 0
-  height: 100%
-  width: 320px
-  background-color: #fff
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15)
-  padding: 30px
-  transform: translateX(100%)
-  transition: transform 0.2s
-  overflow-y: auto
 
   &-nav
     background: #FFFFFF
@@ -360,7 +349,25 @@ ul
     height: 2px
     width: 100%
     background-color: #fff
-
+  .header
+    position: fixed
+    left: 0
+    top: 0
+    right: 0
+    width: 100%
+  .sidebar
+    position: fixed
+    top: 64px
+    right: 0
+    bottom: 0
+    height: 100%
+    width: 320px
+    background-color: #fff
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15)
+    padding: 30px
+    transform: translateX(100%)
+    transition: transform 0.2s
+    overflow-y: auto
 
 //@import "checkout"
 //@import "shoppingCart"

@@ -175,93 +175,80 @@ ul {
 .icon-likes, .icon-comments {
   margin-right: 6px; }
 
-.sidebar {
-  position: fixed;
-  top: 64px;
+.sidebar-nav {
+  background: #FFFFFF;
+  border: 1px solid #E8E8E8;
+  border-top: none; }
+.sidebar-link {
+  font-size: 14px;
+  line-height: 22px;
+  color: #595959;
+  padding: 16px 48px;
+  display: inline-block;
+  width: 72%; }
+.sidebar-link:hover {
+  background-color: #FFFBE6;
+  color: #FAAD14; }
+.sidebar-link:active {
+  background-color: #FFFBE6;
+  border-right: 3px solid #FAAD14; }
+.sidebar-button {
+  background: #FAAD14;
+  border-radius: 4px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 13px 0 13px;
+  margin-top: 20px; }
+.sidebar-button__icon {
+  margin-right: 10px;
+  fill: #FFFFFF; }
+.sidebar-button__text {
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 24px; }
+.sidebar-card {
+  background: #FFFFFF;
+  border: 1px solid #E8E8E8;
+  margin-top: 20px; }
+.sidebar-card__header {
+  background: #FAFAFA;
+  border-bottom: 1px solid #E8E8E8;
+  padding: 23px 25px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #595959; }
+.sidebar-card__body {
+  padding: 22px 40px 30px 25px; }
+.sidebar-card__body-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #D48806; }
+.sidebar-card__body-text {
+  font-size: 14px;
+  line-height: 22px;
+  color: #262626;
+  padding-top: 10px; }
+.sidebar-promo {
+  display: block;
+  width: 100%;
+  background: #fff url(img/promo.jpg) no-repeat center/cover;
+  height: 260px;
+  border: 1px solid #E8E8E8;
+  margin-top: 20px;
+  position: relative; }
+.sidebar-promo::before {
+  content: "╨а╨╡╨║╨╗╨░╨╝╨░";
+  position: absolute;
   right: 0;
-  bottom: 0;
-  height: 100%;
-  width: 320px;
-  background-color: #fff;
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
-  padding: 30px;
-  transform: translateX(100%);
-  transition: transform 0.2s;
-  overflow-y: auto; }
-  .sidebar-nav {
-    background: #FFFFFF;
-    border: 1px solid #E8E8E8;
-    border-top: none; }
-  .sidebar-link {
-    font-size: 14px;
-    line-height: 22px;
-    color: #595959;
-    padding: 16px 48px;
-    display: inline-block;
-    width: 72%; }
-  .sidebar-link:hover {
-    background-color: #FFFBE6;
-    color: #FAAD14; }
-  .sidebar-link:active {
-    background-color: #FFFBE6;
-    border-right: 3px solid #FAAD14; }
-  .sidebar-button {
-    background: #FAAD14;
-    border-radius: 4px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 13px 0 13px;
-    margin-top: 20px; }
-  .sidebar-button__icon {
-    margin-right: 10px;
-    fill: #FFFFFF; }
-  .sidebar-button__text {
-    color: #FFFFFF;
-    font-size: 16px;
-    line-height: 24px; }
-  .sidebar-card {
-    background: #FFFFFF;
-    border: 1px solid #E8E8E8;
-    margin-top: 20px; }
-  .sidebar-card__header {
-    background: #FAFAFA;
-    border-bottom: 1px solid #E8E8E8;
-    padding: 23px 25px;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    color: #595959; }
-  .sidebar-card__body {
-    padding: 22px 40px 30px 25px; }
-  .sidebar-card__body-title {
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    color: #D48806; }
-  .sidebar-card__body-text {
-    font-size: 14px;
-    line-height: 22px;
-    color: #262626;
-    padding-top: 10px; }
-  .sidebar-promo {
-    display: block;
-    width: 100%;
-    background: #fff url(img/promo.jpg) no-repeat center/cover;
-    height: 260px;
-    border: 1px solid #E8E8E8;
-    margin-top: 20px;
-    position: relative; }
-  .sidebar-promo::before {
-    content: "╨а╨╡╨║╨╗╨░╨╝╨░";
-    position: absolute;
-    right: 0;
-    top: 0;
-    background: #c4c4c4;
-    padding: 0 26px;
-    text-align: center;
-    color: #FFF; }
+  top: 0;
+  background: #c4c4c4;
+  padding: 0 26px;
+  text-align: center;
+  color: #FFF; }
 
 .sidebar.visible {
   display: block;
@@ -306,6 +293,27 @@ ul {
   .menu-toggle span {
     height: 2px;
     width: 100%;
-    background-color: #fff; } }
+    background-color: #fff; }
+
+  .header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 100%; }
+
+  .sidebar {
+    position: fixed;
+    top: 64px;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 320px;
+    background-color: #fff;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
+    padding: 30px;
+    transform: translateX(100%);
+    transition: transform 0.2s;
+    overflow-y: auto; } }
 
 /*# sourceMappingURL=style.css.map */
