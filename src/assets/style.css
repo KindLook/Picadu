@@ -66,7 +66,8 @@ ul {
     background: #FFFFFF;
     border: 1px solid #D9D9D9;
     overflow: hidden;
-    width: 237px;
+    max-width: 237px;
+    width: 60%;
     height: 32px; }
 
 .menu-toggle {
@@ -170,85 +171,90 @@ ul {
     color: #BFBFBF; }
   .posts__avatar {
     margin-left: 10px;
-    border-radius: 4px; }
+    border-radius: 4px;
+    width: 34px;
+    height: 34px; }
 
 .icon-likes, .icon-comments {
   margin-right: 6px; }
 
-.sidebar-nav {
-  background: #FFFFFF;
-  border: 1px solid #E8E8E8;
-  border-top: none; }
-.sidebar-link {
-  font-size: 14px;
-  line-height: 22px;
-  color: #595959;
-  padding: 16px 48px;
-  display: inline-block;
-  width: 72%; }
-.sidebar-link:hover {
-  background-color: #FFFBE6;
-  color: #FAAD14; }
-.sidebar-link:active {
-  background-color: #FFFBE6;
-  border-right: 3px solid #FAAD14; }
-.sidebar-button {
-  background: #FAAD14;
-  border-radius: 4px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 13px 0 13px;
-  margin-top: 20px; }
-.sidebar-button__icon {
-  margin-right: 10px;
-  fill: #FFFFFF; }
-.sidebar-button__text {
-  color: #FFFFFF;
-  font-size: 16px;
-  line-height: 24px; }
-.sidebar-card {
-  background: #FFFFFF;
-  border: 1px solid #E8E8E8;
-  margin-top: 20px; }
-.sidebar-card__header {
-  background: #FAFAFA;
-  border-bottom: 1px solid #E8E8E8;
-  padding: 23px 25px;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
-  color: #595959; }
-.sidebar-card__body {
-  padding: 22px 40px 30px 25px; }
-.sidebar-card__body-title {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
-  color: #D48806; }
-.sidebar-card__body-text {
-  font-size: 14px;
-  line-height: 22px;
-  color: #262626;
-  padding-top: 10px; }
-.sidebar-promo {
-  display: block;
-  width: 100%;
-  background: #fff url(img/promo.jpg) no-repeat center/cover;
-  height: 260px;
-  border: 1px solid #E8E8E8;
-  margin-top: 20px;
-  position: relative; }
-.sidebar-promo::before {
-  content: "╨а╨╡╨║╨╗╨░╨╝╨░";
-  position: absolute;
-  right: 0;
-  top: 0;
-  background: #c4c4c4;
-  padding: 0 26px;
-  text-align: center;
-  color: #FFF; }
+.sidebar {
+  max-width: 370px;
+  width: 31%; }
+  .sidebar-nav {
+    background: #FFFFFF;
+    border: 1px solid #E8E8E8;
+    border-top: none; }
+  .sidebar-link {
+    font-size: 14px;
+    line-height: 22px;
+    color: #595959;
+    padding: 16px 48px;
+    display: inline-block;
+    width: 72%; }
+  .sidebar-link:hover {
+    background-color: #FFFBE6;
+    color: #FAAD14; }
+  .sidebar-link:active {
+    background-color: #FFFBE6;
+    border-right: 3px solid #FAAD14; }
+  .sidebar-button {
+    background: #FAAD14;
+    border-radius: 4px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 0 13px;
+    margin-top: 20px; }
+  .sidebar-button__icon {
+    margin-right: 10px;
+    fill: #FFFFFF; }
+  .sidebar-button__text {
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 24px; }
+  .sidebar-card {
+    background: #FFFFFF;
+    border: 1px solid #E8E8E8;
+    margin-top: 20px; }
+  .sidebar-card__header {
+    background: #FAFAFA;
+    border-bottom: 1px solid #E8E8E8;
+    padding: 23px 25px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #595959; }
+  .sidebar-card__body {
+    padding: 22px 40px 30px 25px; }
+  .sidebar-card__body-title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #D48806; }
+  .sidebar-card__body-text {
+    font-size: 14px;
+    line-height: 22px;
+    color: #262626;
+    padding-top: 10px; }
+  .sidebar-promo {
+    display: block;
+    width: 100%;
+    background: #fff url(img/promo.jpg) no-repeat center/cover;
+    height: 260px;
+    border: 1px solid #E8E8E8;
+    margin-top: 20px;
+    position: relative; }
+  .sidebar-promo::before {
+    content: "╨а╨╡╨║╨╗╨░╨╝╨░";
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #c4c4c4;
+    padding: 0 26px;
+    text-align: center;
+    color: #FFF; }
 
 .sidebar.visible {
   display: block;
@@ -304,7 +310,8 @@ ul {
     width: 100%; }
 
   .content {
-    margin-top: 94px; }
+    margin-top: 94px;
+    margin-bottom: 30px; }
 
   .sidebar {
     position: fixed;
@@ -336,5 +343,21 @@ ul {
     width: 90%;
     margin: auto;
     justify-content: left; } }
+@media (max-width: 768px) {
+  .posts__footer {
+    flex-direction: column; }
+
+  .posts__author {
+    margin-top: 15px;
+    margin-right: auto;
+    margin-left: 36px;
+    text-align: right; }
+
+  .posts__about {
+    order: 2; }
+
+  .posts__avatar {
+    margin-left: 0;
+    margin-right: 10px; } }
 
 /*# sourceMappingURL=style.css.map */
