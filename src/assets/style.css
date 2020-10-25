@@ -319,7 +319,7 @@ ul {
     top: 64px;
     right: 0;
     bottom: 0;
-    height: calc(100% - 178px);
+    height: calc(100% - 64px);
     width: 320px;
     background-color: #fff;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
@@ -329,17 +329,7 @@ ul {
     overflow-y: auto; }
 
   .header__header-nav {
-    margin-left: 0;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #FA8C16;
-    padding: 16px 35px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
+    display: none; }
 
   .header-menu {
     width: 90%;
